@@ -72,7 +72,7 @@ def summarise_expenses(expenses_file_path, budget):
         if key in amount_by_category:
             amount_by_category[key] += expense.amount
         else:
-            amount_by_category[key] = expense.amount  #creating new entry and it gonna equal to expense amount
+            amount_by_category[key] = expense.amount  
 
     print("Expenses by Category 🏷️:")
     for key, amount in amount_by_category.items():
@@ -94,4 +94,5 @@ def summarise_expenses(expenses_file_path, budget):
 
 
 if __name__ == "__main__":
+
     main()
